@@ -2,10 +2,7 @@ const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/styles.css', // atau tambahkan file CSS lain
-  '/script.js', // atau tambahkan file JS lain
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/icon.png'
 ];
 
 // Install service worker
