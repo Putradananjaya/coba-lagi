@@ -12,7 +12,7 @@ self.addEventListener('install', (event) => {
       .then((cache) => {
         return cache.addAll(urlsToCache);
       })
-  );
+  ); 
 });
 
 // Fetch cached files
