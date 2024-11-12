@@ -13,7 +13,12 @@ self.addEventListener("install", (event) => {
     caches
       .open(CACHE_NAME)
       .then((cache) => {
-        return cache.addAll(urlsToCache);
+        return cache.addAll([
+          "/index.html",
+          "/service-worker.js",
+          "/manifest.json",
+          "/icon.png",
+        ]);
       })
       .catch((error) => {
         console.error("Gagal menambahkan sumber daya ke cache:", error);
