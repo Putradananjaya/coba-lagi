@@ -14,6 +14,7 @@ self.addEventListener("install", (event) => {
       .open(CACHE_NAME)
       .then((cache) => {
         return cache.addAll([
+          "/",
           "/index.html",
           "/service-worker.js",
           "/manifest.json",
